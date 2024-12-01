@@ -17,7 +17,7 @@ public class EmprestimoService {
         // EXIBIR A LISTA DE LIVROS
         System.out.println("\nLivros cadastrados:");
         for (int i = 0; i < LivroService.livros.size(); i++) {
-            System.out.println(i + 1 + ". " + LivroService.livros.get(i).getTitulo());
+            System.out.println(i + 1 + ". " + LivroService.livros.get(i).getTitulo() + " - " + LivroService.livros.get(i).getAutor());
         }
 
         // INPUT DO TÍTULO DO LIVRO
@@ -111,7 +111,7 @@ public class EmprestimoService {
                 int diasDeAtraso = diasDevolucao - emprestimoSelecionado.getDiasEmprestimo();
                 if (diasDeAtraso > 0) {
                     double multa = diasDeAtraso * 0.8;
-                    System.out.printf("Você fez a devolução com %d dias de atraso! Multa de: R$ %.2f%n", diasDeAtraso, multa);
+                    System.out.printf("Você fez a devolução com %d dia(s) de atraso! Multa de: R$ %.2f%n", diasDeAtraso, multa);
                 } else {
                     System.out.println("O livro foi devolvido sem atraso.");
                 }

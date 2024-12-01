@@ -11,10 +11,10 @@ public class UsuarioService implements Cadastravel {
 
     // CRIAÇÃO DE LISTA DE USUÁRIOS
     public static ArrayList<Usuario> usuarios = new ArrayList<>(); static {{
-        usuarios.add(new Usuario("Márcio", "marcio@gmail.com", "09898765408", TipoUsuario.ALUNO));
-        usuarios.add(new Usuario("Vítor", "vitor@gmail.com", "02588976502", TipoUsuario.ALUNO));
-        usuarios.add(new Usuario("Lívia", "livia@gmail.com", "05598734501", TipoUsuario.PROFESSOR));
-        usuarios.add(new Usuario("Jaime", "jaime@gmail.com", "08878362509", TipoUsuario.ADMINISTRADOR));
+        usuarios.add(new Usuario("Márcio Aranha", "marcio@gmail.com", "09898765408", TipoUsuario.ALUNO));
+        usuarios.add(new Usuario("Vítor Macedo", "vitor@gmail.com", "02588976502", TipoUsuario.ALUNO));
+        usuarios.add(new Usuario("Lívia Almeida", "livia@gmail.com", "05598734501", TipoUsuario.PROFESSOR));
+        usuarios.add(new Usuario("Jaime Ribeiro", "jaime@gmail.com", "08878362509", TipoUsuario.ADMINISTRADOR));
     }}
 
 
